@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CPFL | Projeto Memória Viva</title>
+  <link href="stylesheets/application.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/jquery.lightbox-0.5.css" media="all" rel="stylesheet" type="text/css" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+</head>
+<body>
+	<header>
+		<section class="container">
+			<section id="text-size-control">
+				<a href="javascript://">A +</a>
+				&nbsp;
+				<a href="javascript://">A -</a>
+			</section>
+			<figure> <a href="/"><img alt="CPFL | 100 Anos Gerando História" src="images/logo.png" /></a> </figure>
+			<section id="project-name">
+				<h2>Projeto</h2>
+				<h1>Memória Viva</h1>
+			</section>
+		</section>
+	</header>
+	<nav>
+		<div class="container">
+			<ul>
+				<li><a href="/" class="active">Home</a></li>
+				<li><a href="/nossa-historia">Nossa História</a></li>
+				<li><a href="/nossa-gente/index">Nossa Gente</a></li>
+				<li><a href="/">Nossas Raízes</a></li>
+				<li><a href="/acervo">Acervo</a></li>
+				<li><a href="/contato">Contato</a></li>
+			</ul>
+			<section id="search">
+				<form accept-charset="UTF-8" action="/search" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="ox9L7a6oqnYFNfBLlIM5cPinM4AnSI9vSS4xofHYSiM=" /></div>
+					<input type="text" name="query" placeholder="Realize sua busca aqui">
+					<input type="submit" class="bnt search">	
+</form>			</section>
+		</div>
+	</nav>
+	<section id="content" class="container clearfix">
+    <h6>
+  Home - <strong>Nossa Gente</strong>
+</h6>
+
+<div id="filter">
+  <div class="label">
+    <span>acesso rápido:</span>
+  </div>
+
+  <form action="/nossa-gente/eixo" method="POST">
+    <select name="axis">
+      <option>ESCOLHA UM EIXO</option>
+      <option value="solidarity">Solidariedade</option>
+      <option value="leader">Liderança</option>
+      <option value="career">Carreira</option>
+      <option value="knowledge">Gestão do conhecimento</option>
+      <option value="family">Família</option>
+      <option value="overcoming">Superação</option>
+      <option value="challenge">Desafio / Futuro</option>
+      <option value="mission">Valores, Missão e Cultura</option>
+      <option value="collaboration">Cooperação / Colaboração</option>
+      <option value="company">Empresa</option>
+    </select>
+  </form>
+
+  <select>
+    <option>ESCOLHA UM NOME</option>
+    <option>Solidariedade</option>
+    <option>Liderança</option>
+    <option>Carreira</option>
+    <option>Gestão do conhecimento</option>
+    <option>Família</option>
+    <option>Superação</option>
+    <option>Desafio / Futuro</option>
+    <option>Valores, Missão e Cultura</option>
+    <option>Cooperação / Colaboração</option>
+    <option>Empresa</option>
+  </select>
+</div>
+
+
+<div id="people">
+  <div class="person">
+    <img alt="Person1" src="images/placeholders/nossa_gente/person1.jpg" />
+
+    <div class="person orange none">
+      <a href="show"></a>
+    </div>
+  </div>
+
+  <div class="person">
+    <img alt="Person2" src="images/placeholders/nossa_gente/person2.jpg" />
+
+    <div class="person orange none">
+      <a href="show"></a>
+    </div>
+  </div>
+
+  <div class="person">
+    <img alt="Person3" src="images/placeholders/nossa_gente/person3.jpg" />
+
+    <div class="person orange none">
+      <a href="show"></a>
+    </div>
+  </div>
+
+  <div class="person">
+    <img alt="Person4" src="images/placeholders/nossa_gente/person4.jpg" />
+
+    <div class="person orange none">
+      <a href="show"></a>
+    </div>
+  </div>
+
+  <div class="person">
+    <img alt="Person5" src="images/placeholders/nossa_gente/person5.jpg" />
+
+    <div class="person orange none">
+      <a href="show"></a>
+    </div>
+  </div>
+
+  <div class="person orange">
+    <p>COOPERAÇÃO/ COLABORAÇÃO</p>
+  </div>
+
+  <div class="person">
+    <img alt="Person6" src="images/placeholders/nossa_gente/person6.jpg" />
+
+    <div class="person green none">
+      <a href="show"></a>
+    </div>
+  </div>
+
+  <div class="person">
+    <img alt="Person7" src="images/placeholders/nossa_gente/person7.jpg" />
+
+    <div class="person green none">
+      <a href="show"></a>
+    </div>
+  </div>
+
+  <div class="person green">
+    <p>LIDERANÇA</p>
+  </div>
+
+  <div class="person">
+    <img alt="Person8" src="images/placeholders/nossa_gente/person8.jpg" />
+
+    <div class="person blue none">
+      <a href="show"></a>
+    </div>
+  </div>
+
+  <div class="person blue">
+    <p>SOLIDARIEDADE</p>
+  </div>
+
+  <div class="person">
+    <img alt="Person9" src="images/placeholders/nossa_gente/person9.jpg" />
+
+    <div class="person green none">
+      <a href="show"></a>
+    </div>
+  </div>
+
+  <div class="person green">
+    <p>CARREIRA</p>
+  </div>
+
+  <div class="person">
+    <img alt="Person10" src="images/placeholders/nossa_gente/person10.jpg" />
+
+    <div class="person red none">
+      <a href="show"></a>
+    </div>
+  </div>
+
+  <div class="person red">
+    <p>GESTÃO DO CONHECIMENTO</p>
+  </div>
+
+  <div class="person">
+    <img alt="Person11" src="images/placeholders/nossa_gente/person11.jpg" />
+
+    <div class="person orange none">
+      <a href="show"></a>
+    </div>
+  </div>
+
+  <div class="person">
+    <img alt="Person12" src="images/placeholders/nossa_gente/person12.jpg" />
+
+    <div class="person orange none">
+      <a href="show"></a>
+    </div>
+  </div>
+
+  <div class="person orange">
+    <p>SUPERAÇÃO</p>
+  </div>
+
+  <div class="person">
+    <img alt="Person13" src="images/placeholders/nossa_gente/person13.jpg" />
+
+    <div class="person orange none">
+      <a href="show"></a>
+    </div>
+  </div>
+
+  <div class="person orange">
+    <p>FAMÍLIA</p>
+  </div>
+
+  <div class="person">
+    <img alt="Person14" src="images/placeholders/nossa_gente/person14.jpg" />
+
+    <div class="person blue none">
+      <a href="show"></a>
+    </div>
+  </div>
+
+  <div class="person blue">
+    <p>EMPRESA</p>
+  </div>
+
+  <div class="person">
+    <img alt="Person1" src="images/placeholders/nossa_gente/person1.jpg" />
+
+    <div class="person red none">
+      <a href="show"></a>
+    </div>
+  </div>
+
+  <div class="person">
+    <img alt="Person15" src="images/placeholders/nossa_gente/person15.jpg" />
+
+    <div class="person red none">
+      <a href="show"></a>
+    </div>
+  </div>
+
+  <div class="person">
+    <img alt="Person11" src="images/placeholders/nossa_gente/person11.jpg" />
+
+    <div class="person red none">
+      <a href="show"></a>
+    </div>
+  </div>
+
+  <div class="person">
+    <img alt="Person16" src="images/placeholders/nossa_gente/person16.jpg" />
+
+    <div class="person red none">
+      <a href="show"></a>
+    </div>
+  </div>
+
+  <div class="person red">
+    <p>DESAFIOS/ FUTURO</p>
+  </div>
+
+  <div class="person">
+    <img alt="Person17" src="images/placeholders/nossa_gente/person17.jpg" />
+
+    <div class="person orange none">
+      <a href="show"></a>
+    </div>
+  </div>
+
+  <div class="person">
+    <img alt="Person18" src="images/placeholders/nossa_gente/person18.jpg" />
+
+    <div class="person orange none">
+      <a href="show"></a>
+    </div>
+  </div>
+
+  <div class="person">
+    <img alt="Person4" src="images/placeholders/nossa_gente/person4.jpg" />
+
+    <div class="person orange none">
+      <a href="show"></a>
+    </div>
+  </div>
+
+  <div class="person">
+    <img alt="Person5" src="images/placeholders/nossa_gente/person5.jpg" />
+
+    <div class="person orange none">
+      <a href="show"></a>
+    </div>
+  </div>
+
+  <div class="person orange">
+    <p>VALORES, MISSÃO E CULTURA</p>
+  </div>
+</div>
+
+
+
+	</section>
+	
+	<footer>
+		<nav class="container">
+			<div id="borda_arredondada"></div>
+			<ul class="social-icons">
+				<li><a href="/" class="socialnetwork facebook">facebook</a></li>
+				<li><a href="/" class="socialnetwork twitter">twitter</a></li>
+			</ul>
+			<ul id="links-bottom">
+				<li><a href="/o-projeto">O Projeto</a></li>
+				<li><a href="/">Créditos</a></li>
+				<li><a href="/">Links</a></li>
+				<li class="omega"><a href="/">Colegas da CPFL</a></li>
+			</ul>
+			<a href="/" class="bnt_retrict_area">Área Restrita</a>
+		</nav>
+	</footer>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="javascripts/jquery.lightbox-0.5.min.js" type="text/javascript"></script>
+	<script src="javascripts/jquery.select.js" type="text/javascript"></script>
+	<script src="javascripts/jquery.select.js" type="text/javascript"></script>
+	<script src="javascripts/application.js" type="text/javascript"></script>
+</body>
+</html>
