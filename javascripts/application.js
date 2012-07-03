@@ -1,21 +1,4 @@
-// This is a manifest file that'll be compiled into application.js, which will include all the files
-// listed below.
-//
-// Any JavaScript/Coffee file within this directory, lib/assets/javascripts, vendor/assets/javascripts,
-// or vendor/assets/javascripts of plugins, if any, can be referenced here using a relative path.
-//
-// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
-// the compiled file.
-//
-// WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
-// GO AFTER THE REQUIRES BELOW.
-//
-//= require jquery
-//= require jquery_ujs
-//= require jquery.lightbox-0.5.min
-//= require_tree .
 $(document).ready(function(){
-  $('select').select();
   home.startup();
 })
 
@@ -35,6 +18,18 @@ var home = {
 	                                imageBtnClose:'/images/lightbox-btn-close.jpg',
 	                                imageBtnPrev: '/images/lightbox-btn-prev.jpg',
 	                                imageBtnNext: '/images/lightbox-btn-next.jpg',});
+	      
+	      $("a.modal").fancybox({
+        		maxWidth	: 800,
+        		maxHeight	: 600,
+        		fitToView	: false,
+        		width		: '70%',
+        		height		: '70%',
+        		autoSize	: true,
+        		closeClick	: true,
+        		openEffect	: 'fade',
+        		closeEffect	: 'none'
+      	});
     }
 }
 
